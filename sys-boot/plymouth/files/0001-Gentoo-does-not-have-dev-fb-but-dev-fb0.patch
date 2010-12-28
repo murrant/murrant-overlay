@@ -1,0 +1,12 @@
+diff -urN a/src/plugins/renderers/frame-buffer/plugin.c b/src/plugins/renderers/frame-buffer/plugin.c
+--- a/src/plugins/renderers/frame-buffer/plugin.c	2010-04-09 15:32:43.000000000 -0500
++++ b/src/plugins/renderers/frame-buffer/plugin.c	2010-05-11 12:26:15.000000000 -0500
+@@ -56,7 +56,7 @@
+ #include "ply-renderer-plugin.h"
+ 
+ #ifndef PLY_FRAME_BUFFER_DEFAULT_FB_DEVICE_NAME
+-#define PLY_FRAME_BUFFER_DEFAULT_FB_DEVICE_NAME "/dev/fb"
++#define PLY_FRAME_BUFFER_DEFAULT_FB_DEVICE_NAME "/dev/fb0"
+ #endif
+ 
+ struct _ply_renderer_head
