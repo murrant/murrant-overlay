@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<layman>
+    <overlay
+	    contact="murraytony@gmail.com"
+	    name="murrant"
+	    src="git://github.com/murrant/murrant-overlay.git"
+	    type="git">
+	<link>
+	    http://murray.homelinux.net
+	</link>
+	<description>
+	    Private overlay of Tony Murray
+	</description>
+    </overlay>
+</layman>
