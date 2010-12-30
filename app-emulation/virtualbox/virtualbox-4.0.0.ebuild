@@ -127,6 +127,8 @@ src_prepare() {
 	epatch "${FILESDIR}/${PN}-ose-3.2.8-mesa-check.patch"
 	# unset useless makeself checks in configure
 	epatch "${FILESDIR}/${PN}-4-makeself-check.patch"
+	# unset useless mkisofs checks in configure
+	epatch "${FILESDIR}/${PN}-4-mkisofs-check.patch"
 
 	# fix build with --as-needed (bug #249295)
 	epatch "${FILESDIR}/${PN}-4-asneeded.patch"
