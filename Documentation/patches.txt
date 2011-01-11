@@ -1,0 +1,2 @@
+Some ebuilds support the epatch_user function from eutils.eclass.
+Patches for packages that support that are in the Documentation directory.  You can either link them or copy them to your /etc/portage directory.
