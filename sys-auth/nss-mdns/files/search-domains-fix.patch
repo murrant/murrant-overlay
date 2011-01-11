@@ -1,0 +1,21 @@
+diff -ur nss-mdns-0.10/src/nss.c nss-mdns-0.10.fixed/src/nss.c
+--- nss-mdns-0.10/src/nss.c	2007-05-12 16:43:48.000000000 +0200
++++ nss-mdns-0.10.fixed/src/nss.c	2010-01-31 20:45:55.000000000 +0100
+@@ -380,7 +380,7 @@
+     }
+ 
+ #ifdef HONOUR_SEARCH_DOMAINS
+-    if (u.count == 0 && avahi_works && !ends_with(name, ".")) {
++    if (u.count == 0 && avahi_works && !strchr(name, '.')) {
+         char **domains;
+ 
+         if ((domains = get_search_domains())) {
+@@ -450,7 +450,7 @@
+         }
+ 
+ #ifdef HONOUR_SEARCH_DOMAINS
+-        if (u.count == 0 && !ends_with(name, ".")) {
++        if (u.count == 0 && !strchr(name, '.')) {
+             char **domains;
+             
+             /* Try the search domains if the user did not use a traling '.' */
