@@ -10,9 +10,12 @@ DESCRIPTION="Reference decoder provides an integer-only implementation of vorbis
 HOMEPAGE="http://xiph.org/vorbis/"
 LICENSE="BSD"
 SLOT="0"
-KEYWORDS="~arm ~amd64 ~x86"
+KEYWORDS="-*"
 IUSE=""
 
 RDEPEND="media-libs/libogg"
 DEPEND=""
 
+src_install () {
+        emake DESTDIR="${D}" install || die "emake install failed"
+}
