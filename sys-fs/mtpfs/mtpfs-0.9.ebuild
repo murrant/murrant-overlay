@@ -6,17 +6,19 @@ EAPI="2"
 
 DESCRIPTION="MTPFS is a Fuse filesystem based on libmtp"
 HOMEPAGE="http://adebenham.com/mtpfs"
-SRC_URI="http://adebenham.com/mtpfs/${P}.tar.gz"
+SRC_URI="http://adebenham.com/debian/${PN}_${PV}.orig.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~x86"
+KEYWORDS="~x86 ~x86_64"
 IUSE="debug"
 
 DEPEND="sys-fs/fuse
       >=dev-libs/glib-2.18.4-r1
       media-libs/libmtp"
 RDEPEND="${DEPEND}"
+
+S="${WORKDIR}/${P}.orig"
 
 src_configure() {
    econf $(use_enable debug) || die 'econf failed'
