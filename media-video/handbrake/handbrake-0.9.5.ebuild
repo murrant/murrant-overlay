@@ -1,10 +1,10 @@
-# Copyright 1999-2007 Gentoo Foundation
+# Copyright 1999-2009 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
 EAPI="2"
 
-inherit gnome2-utils
+inherit gnome2-utils eutils autotools
 
 MY_PN="HandBrake"
 S="${WORKDIR}/${MY_PN}-${PV}"
@@ -12,10 +12,10 @@ S="${WORKDIR}/${MY_PN}-${PV}"
 DESCRIPTION="Open-source DVD to MPEG-4 converter."
 HOMEPAGE="http://handbrake.fr/"
 SRC_URI="http://handbrake.fr/rotation.php?file=${MY_PN}-${PV}.tar.bz2
-               -> ${MY_PN}-${PV}.tar.bz2"
+		-> ${MY_PN}-${PV}.tar.bz2"
+
 LICENSE="GPL-2"
 SLOT="0"
-
 KEYWORDS="~x86 ~amd64"
 
 IUSE="css doc gtk"
@@ -34,8 +34,14 @@ DEPEND="=sys-devel/automake-1.10*
 	=sys-devel/automake-1.9*
 	dev-lang/yasm
 	>=dev-lang/python-2.4.6
-	|| ( >=net-misc/wget-1.11.4 >=net-misc/curl-7.19.4 ) 
+	|| ( >=net-misc/wget-1.11.4 >=net-misc/curl-7.19.4 )
 	$RDEPEND"
+
+src_prepare() {
+	epatch "${FILESDIR}/${PV}-backport-lib-fixes.patch"
+	cd gtk
+	eautoreconf
+}
 
 src_configure() {
 	local myconf=""
