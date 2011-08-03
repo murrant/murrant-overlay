@@ -1,15 +1,14 @@
-<?xml version="1.0" ?>
-<layman>
-    <overlay
-	    contact="murraytony@gmail.com"
-	    name="murrant"
-	    src="git://github.com/murrant/murrant-overlay.git"
-	    type="git">
-	<link>
-	    http://murray.homelinux.net
-	</link>
-	<description>
-	    Private overlay of Tony Murray
-	</description>
-    </overlay>
-</layman>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE repositories SYSTEM "/dtd/repositories.dtd">
+<repositories xmlns="" version="1.0">
+<repo quality="experimental" status="unofficial">
+        <name>murrant</name>
+        <description>Private overlay of Tony Murray</description>
+        <homepage>http://murray.homelinux.net</homepage>
+        <owner type="person">
+                <email>murraytony@gmail.com</email>
+                <name>Tony Murray</name>
+        </owner>
+        <source type="git">git://github.com/murrant/murrant-overlay.git</source>
+</repo>
+</repositories>
