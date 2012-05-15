@@ -23,7 +23,6 @@ RDEPEND="${DEPEND}
 	>=sys-kernel/dracut-007"
 
 src_prepare() {
-	epatch ${FILESDIR}/0001-Gentoo-does-not-have-dev-fb-but-dev-fb0.patch
 	eautoreconf || die "eautoreconf failed"
 }
 
