@@ -25,7 +25,7 @@ RDEPEND="${DEPEND}"
 S="${WORKDIR}/${MY_P}"
 
 src_prepare() {
-	epatch "${FILESDIR}/${P}-makefile.patch"
+#	epatch "${FILESDIR}/${P}-makefile.patch"
 
 	# enable verbose build
 	# do not link to libelf statically
