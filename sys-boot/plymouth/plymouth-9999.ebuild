@@ -4,7 +4,7 @@
 
 EAPI="2"
 
-inherit autotools mount-boot git
+inherit autotools mount-boot git-2
 
 DESCRIPTION="Graphical boot animation (splash) and logger"
 HOMEPAGE="http://cgit.freedesktop.org/plymouth/"
