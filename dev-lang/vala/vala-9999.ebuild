@@ -5,7 +5,7 @@
 EAPI="3"
 GCONF_DEBUG="no"
 
-inherit gnome2 git
+inherit gnome2 git-2
 
 EGIT_REPO_URI="git://git.gnome.org/vala"
 EGIT_BOOTSTRAP="autogen.sh"
