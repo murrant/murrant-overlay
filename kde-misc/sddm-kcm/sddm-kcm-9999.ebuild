@@ -11,9 +11,9 @@ EGIT_REPO_URI="git://github.com/sddm/sddm-kcm.git"
 
 LICENSE="GPL-2+"
 SLOT="0"
-KEYWORDS=""
+KEYWORDS="~amd64 ~x86"
 IUSE=""
 
 DEPEND="dev-qt/qtdeclarative:4
-	x11-misc/sddm[qt4]"
+	x11-misc/sddm"
 RDEPEND="${DEPEND}"
