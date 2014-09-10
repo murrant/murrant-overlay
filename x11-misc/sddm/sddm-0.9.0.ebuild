@@ -4,6 +4,8 @@
 
 EAPI=5
 inherit cmake-utils toolchain-funcs user
+MY_P="sddm-stable-0.9"
+S=${WORKDIR}/${MY_P}
 
 DESCRIPTION="Simple Desktop Display Manager"
 HOMEPAGE="https://github.com/sddm/sddm"
