@@ -1,0 +1,10 @@
+--- Makefile.am.orig	2014-10-17 16:43:08.229223509 -0500
++++ Makefile.am	2014-10-17 16:43:17.972289333 -0500
+@@ -2,7 +2,6 @@
+ 
+ SUBDIRS = \
+       src		\
+-	  bindings	\
+ 	  example	\
+ 	  docs
+ 

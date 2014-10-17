@@ -1,0 +1,15 @@
+--- Makefile.in.orig	2014-10-17 15:02:56.560959819 -0500
++++ Makefile.in	2014-10-17 15:02:25.322216247 -0500
+@@ -39,10 +39,10 @@
+ pkglibdir = $(libdir)/@PACKAGE@
+ pkglibexecdir = $(libexecdir)/@PACKAGE@
+ am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd
+-install_sh_DATA = $(install_sh) -c -m 644
++install_sh_DATA = $(install_sh) -f -m 644
+ install_sh_PROGRAM = $(install_sh) -c
+ install_sh_SCRIPT = $(install_sh) -c
+-INSTALL_HEADER = $(INSTALL_DATA)
++INSTALL_HEADER = $(INSTALL_DATA) -f
+ transform = $(program_transform_name)
+ NORMAL_INSTALL = :
+ PRE_INSTALL = :

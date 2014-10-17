@@ -1,0 +1,11 @@
+--- libdbusmenu-gtk/Makefile.in.orig	2014-10-17 15:49:36.900521951 -0500
++++ libdbusmenu-gtk/Makefile.in	2014-10-17 15:49:46.305486224 -0500
+@@ -57,7 +57,7 @@
+ pkglibdir = $(libdir)/@PACKAGE@
+ pkglibexecdir = $(libexecdir)/@PACKAGE@
+ am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd
+-install_sh_DATA = $(install_sh) -c -m 644
++install_sh_DATA = $(install_sh) -f -m 644
+ install_sh_PROGRAM = $(install_sh) -c
+ install_sh_SCRIPT = $(install_sh) -c
+ INSTALL_HEADER = $(INSTALL_DATA)
