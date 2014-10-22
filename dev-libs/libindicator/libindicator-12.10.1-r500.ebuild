@@ -17,7 +17,7 @@ REQUIRED_USE="|| ( gtk2 gtk3 )"
 
 RDEPEND=">=dev-libs/glib-2.22[${MULTILIB_USEDEP}]
 	gtk2? ( >=x11-libs/gtk+-2.18:2[${MULTILIB_USEDEP}] )
-	gtk3? ( >=x11-libs/gtk+-3.2:3[${MULTILIB_USEDEP}] )"
+	gtk3? ( >=x11-libs/gtk+-3.2:3 )"
 DEPEND="${RDEPEND}
 	virtual/pkgconfig
 	test? ( dev-util/dbus-test-runner )"
